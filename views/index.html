@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="/css/style.css">
 
   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
   <script type="text/javascript" src="/scripts/app.js"></script>
 
@@ -23,7 +22,7 @@
 
   {{scp}}
   <a href="/{{ id }}"> {{station}} </a>
-  {{linename}}
+  id{{linename}}
   {{division}}
   {{dates}}
   {{event_time}}
@@ -34,6 +33,21 @@
 </p>
 
 {{/mtas}}
+
+
+<form class="mtaSearch">
+        <label class="mtaHead"> Search by Station: </label>
+        <input id="mtaInput" />
+        <br />
+        <br />
+        <button id="welHead" class="mtaStation" type="submit">Submit</button>
+    </form>
+
+
+
+
+
+
 
     <canvas id="myChart" width="400" height="400"></canvas>
 
