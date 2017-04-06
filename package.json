@@ -1,0 +1,31 @@
+{
+  "name": "turtle-crew",
+  "version": "1.0.0",
+  "description": "This is where the Turtles will do their turtle stuff!",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "chart.js": "^2.5.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.15.2",
+    "moment": "^2.18.1",
+    "mustache-express": "^1.2.4",
+    "node-fetch": "^1.6.3",
+    "path": "^0.12.7",
+    "pg-promise": "^5.6.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hopper-turtle-mtadata/turtle-crew.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hopper-turtle-mtadata/turtle-crew/issues"
+  },
+  "homepage": "https://github.com/hopper-turtle-mtadata/turtle-crew#readme"
+}
