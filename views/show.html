@@ -10,27 +10,14 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
 
    <script src="scripts/app.js"></script>
-  <title>Document</title>
+  <title>Train Station</title>
 </head>
 <body>
 {{#mtas}}
 
-  {{unit}}
-
-  {{ca}}
-
-  {{scp}}
   {{station}}
-  {{linename}}
-  {{division}}
-  {{dates}}
-  {{event_time}}
-  {{ description }}
-  {{entries }}
-  {{exits}}
+
   <p>{{id}}</p>
-  <img src="{{poster}}"  />
-  <a href="{{id}}/edit"><button>Edit</button></a>
   <button type="submit" class="delete-data" data-id={{ id }}>DELETE</button>
 
 {{/mtas}}

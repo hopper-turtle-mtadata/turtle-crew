@@ -22,15 +22,5 @@ controller.show = (req,res)=>{
   .catch(err => console.log('ERROR:', err));
 
 }
-controller.edit = (req, res) =>{
-  let id = req.params.id
-  mtaModel
-    .showOne(id)
-    .then((data)=>{
-      res.render('edit', {mtas: data})
-    })
-    .catch(err => console.log('ERROR:', err));
-}
-
 
 module.exports = controller;
