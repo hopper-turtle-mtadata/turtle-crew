@@ -15,7 +15,14 @@ $(function () {
 // Dropdown ends
 
 
- console.log('yo b');
+  
+
+
+
+
+
+
+
      // Step 3. Create a data object
      var data = {
          labels: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
@@ -89,20 +96,6 @@ $(function () {
      // Step 2. Get the context of the canvas element we want to select
      var ctx = document.getElementById("myChart").getContext("2d");
      var myNewChart = new Chart(ctx).Line(data, option);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

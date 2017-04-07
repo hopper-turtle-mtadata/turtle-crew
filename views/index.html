@@ -3,6 +3,7 @@
 <head>
   <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+
   <script type="text/javascript" src="/scripts/app.js"></script>
   <meta charset="UTF-8">
   <title>MTA Subway Turnstile Data</title>
@@ -91,6 +92,41 @@ body {
 </style>
 </head>
 <body>
+
+
+  <div id="searchdropdown">
+          <input id="stations" type="text" autocomplete="off" placeholder="Enter Station">
+        <div class="btn">
+          <div class="results"></div>
+  </div>
+  <!-- searchbar container -->
+</div>
+
+<div class="drop">
+</div>
+{{#mtas}}
+
+  <a href="/{{ id }}"> {{station}} </a>
+
+
+
+{{/mtas}} 
+  
+<select id="">
+  <option value="MONDAY">MONDAY</option>
+  <option value="TUESDAY">TUESDAY</option>
+  <option value="WEDNESDAY">WEDNESDAY</option>
+  <option value="THURSDAY">THURSDAY</option>
+  <option value="FRIDAY">FRIDAY</option>
+  <option value="SATURDAY">SATURDAY</option>
+  <option value="SUNDAY">SUNDAY</option>
+</select>
+
+    <canvas id="myChart" width="400" height="400"></canvas>
+
+
+
+
     <div id="container">
         <div class="navigation">
             <ul class="nav-links">
@@ -143,5 +179,6 @@ body {
           }
       }
       </script>
+
 </body>
 </html>
