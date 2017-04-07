@@ -1,4 +1,20 @@
 $(function () {
+
+  $('#stations').keyup(()=>{
+    $.ajax({
+      url: 'station',
+      method: 'POST',
+      data: {station: $("#stations").val()},
+      success: data => {
+        $(".drop").text(data.station);
+      }, error: err => {
+        console.log("err", err);
+      }
+    })
+  });
+// Dropdown ends
+
+
  console.log('yo b');
      // Step 3. Create a data object
      var data = {
@@ -73,5 +89,25 @@ $(function () {
      // Step 2. Get the context of the canvas element we want to select
      var ctx = document.getElementById("myChart").getContext("2d");
      var myNewChart = new Chart(ctx).Line(data, option);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  });//end of document ready
