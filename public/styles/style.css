@@ -1,83 +1,85 @@
-body{
+body {
     font-family: Helvetica, sans-serif;
     margin: 0;
     padding: 0;
 }
 .navigation {
-    background-color: cornflowerblue;
     top: 0;
     margin: 0;
-    height: 20%;
+
 }
-.nav-links {
+.nav-menu {
     display: flex;
     flex-direction: row-wrap;
-/*    justify-content: space-between;*/
     padding: 2%;
     top: 0;
     margin: 0;
 }
-.nav-links li {
+.nav-menu li {
     list-style-type: none;
     padding-left: 20%;
 }
-.nav-links a {
+.nav-menu a {
     text-decoration: none;
     font-size: 2em;
-    color: white;
+    color: black;
 }
-.info-container {
+
+#body-container {
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  top: 10%;
+}
+
+#show-container {
+  width: 100vw;
+  height: 90vh;
+  position: absolute;
+  top: 10%;
+}
+
+.photo {
+    background: url("train-logo.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: blur(3px);
+    width: 70%;
+    height: 70%;
+    left: 15%;
+    position: absolute;
+}
+.info {
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+/*  justify-content: center;*/
+  align-content: center;
+  padding: 4%;
+  left: 15%;
+  background-color: rgba(255,255,255,0.3);
+  box-shadow: 0 0 5px 10px rgba(255,255,255,0.3);
+  width: 70%;
+  height: 70%;
+  position: absolute;
+}
+
+.form-div {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 15%;
-    left: 30%;
-    border: 1px solid lightgrey;
-    padding: 3%;
+    padding: 5%;
 }
-.dropbtn {
-    background-color: cornflowerblue;
-    color: white;
-    padding: 16px;
-    margin-left: 150px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-}
-.dropbtn:hover, .dropbtn:focus {
-    background-color: #3d648e;
-}
-#myInput {
-    border-box: box-sizing;
-    background-image: url('searchicon.png');
-    background-position: 14px 12px;
-    background-repeat: no-repeat;
-    font-size: 16px;
-    padding: 14px 20px 12px 45px;
+
+.mtaSearch button {
+    padding: 1%;
     border: none;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
+
+.mtaSearch input {
+    padding: 1%;
+    border: none;
 }
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f6f6f6;
-    min-width: 230px;
-    overflow: auto;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-.dropdown a:hover {
-  background-color: #ddd
-}
-.show {
-  display:block;
-}
+
