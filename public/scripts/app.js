@@ -22,10 +22,10 @@ function myFunction() {
 
     function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-            zoom: 13,
+            zoom: 12,
             center: {
-                lat: 40.739885,
-                lng: -73.990082
+                lat: 40.763752777777775,
+                lng: -73.96662022222223
             },
             mapTypeId: 'satellite'
         });
@@ -80,21 +80,37 @@ function myFunction() {
     // Heatmap data: 500 Points
     function getPoints() {
         return [
-            //queensboro plaza
-            {
-                location: new google.maps.LatLng(40.750582, -73.940202),
-                weight: 20000
-            },
             //lex ave
             {
                 location: new google.maps.LatLng(40.763752777777775, -73.96662022222223),
-                weight: 20
+                weight: 200000
             },
             //59th st
             {
                 location: new google.maps.LatLng(40.761514000000005, -73.97593179999998),
-                weight: 10
+                weight: 1000
             },
+
+            //57th st
+            {
+                location: new google.maps.LatLng(40.764318, -73.97905399999998),
+                weight: 10000
+            },
+            //49th st
+            {
+                location: new google.maps.LatLng(40.759901000000006, -73.98413900000001),
+                weight: 5000
+            },
+            //times sq
+            {
+                location: new google.maps.LatLng(40.7553593, -73.98736839999998),
+                weight: 30000
+            },
+            //34th st
+            {
+                location: new google.maps.LatLng(40.750881780487845, -73.9908759268293),
+                weight: 3000
+            }
         ];
     }
 $(function () {
@@ -127,13 +143,15 @@ $(function () {
 //
 // });
 
+
+
 //set up good just get the json values
 const Calling = (album) => {
 
     const albumContainer = $('<div></div>').addClass('albumContainer');
-    result = $('<div class="result">').text(album.Result);
-    lat = $('<div class="lat">').text(album.latitude);
-    long = $('<div class="long">').text(album.longitude);
+          result = $('<div class="result">').text(album.Result),
+          lat = $('<div class="lat">').text(album.latitude)
+          long = $('<div class="long">').text(album.longitude);
     $('.albumContainer').remove();
      result.appendTo(albumContainer);
      lat.appendTo(albumContainer);
@@ -163,7 +181,7 @@ const Calling = (album) => {
 //#searchSubmit end of click
 });
 
-
+console.log(long);
 
 
 

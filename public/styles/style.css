@@ -16,8 +16,8 @@ body{
         display: flex;
         flex-direction: column;
         position: absolute;
-        top: 15%;
-        left: 30%;
+        top: 80px;
+        left: 430px;
         border: 1px solid lightgrey;
         padding: 3%;
     }
