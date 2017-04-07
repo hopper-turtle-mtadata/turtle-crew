@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This is where the Turtles will do their turtle stuff!",
   "main": "index.js",
+
   "dependencies": {
     "body-parser": "^1.17.1",
     "chart.js": "^2.5.0",
@@ -15,6 +16,7 @@
     "pg-promise": "^5.6.4"
   },
   "devDependencies": {},
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -27,5 +29,5 @@
   "bugs": {
     "url": "https://github.com/hopper-turtle-mtadata/turtle-crew/issues"
   },
-  "homepage": "https://github.com/hopper-turtle-mtadata/turtle-crew#readme"
+
 }

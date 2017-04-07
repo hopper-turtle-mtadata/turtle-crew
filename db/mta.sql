@@ -6,6 +6,7 @@ CREATE TABLE trains(
 );
 
 
+
 INSERT INTO trains (station) VALUES
 ('59 ST'),
 ('5 AV/59 ST'),
@@ -382,3 +383,4 @@ INSERT INTO trains (station) VALUES
 ('TOMPKINSVILLE'),
 ('RIT-MANHATTAN'),
 ('RIT-ROOSEVELT');
+
