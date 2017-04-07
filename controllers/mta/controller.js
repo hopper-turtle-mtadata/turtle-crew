@@ -20,7 +20,18 @@ controller.show = (req,res)=>{
     res.render('show', {mtas : data})
   })
   .catch(err => console.log('ERROR:', err));
+}
 
+controller.dropdown = (req, res) =>{
+    mtaModel
+    .dropdown(req.body.station)
+    .then((data) =>{
+      res.json(data)
+    })
+    .catch (err => {
+      console.log('ERROR:', err);
+      res.json([]);
+    });
 }
 
 module.exports = controller;

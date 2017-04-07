@@ -12,7 +12,22 @@
 
   <title>Train Station</title>
 </head>
-<body>
+
+{{#mtas}}
+
+  {{station}}
+<div id="stationList">
+  <p>{{id}}</p>
+
+  <img src="{{poster}}"  />
+
+
+  <canvas id="myChart" width="400" height="400"></canvas>
+
+{{/mtas}}
+
+</div>
+
   <div id="container">
     <div class="navigation">
         <ul class="nav-menu">
@@ -39,5 +54,6 @@
         </div>
     </div>
   </div>
+
 </body>
 </html>

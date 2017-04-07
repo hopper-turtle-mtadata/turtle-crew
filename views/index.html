@@ -13,6 +13,41 @@
   <title>Train Stacks</title>
 </head>
 <body>
+
+
+  <div id="searchdropdown">
+          <input id="stations" name="player" type="text" autocomplete="off" placeholder="Enter Station">
+        <div class="btn">
+          <div class="results"></div>
+  </div>
+  <!-- searchbar container -->
+</div>
+
+<div class="drop">
+</div>
+{{#mtas}}
+<p>
+  <a href="/{{ id }}"> {{station}} </a>
+
+
+</p>
+
+{{/mtas}}
+
+
+
+
+
+
+
+
+
+
+
+    <article id="stationList">
+  </article>
+
+
     <div id="container">
 
         <div class="navigation">
@@ -42,5 +77,6 @@
                 </div>
             </div>
         </div>
+
 </body>
 </html>
