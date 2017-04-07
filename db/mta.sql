@@ -6,5 +6,4 @@ CREATE TABLE trains(
 );
 
 
-INSERT INTO trains (station) VALUES
-('14 ST-UNION SQ');
+INSERT INTO stations (station) VALUES
