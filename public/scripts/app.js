@@ -8,8 +8,6 @@ $(function () {
      $('.list').hide();
   });
 
-
-
   // const $clickApendr = $('.list').on('click', function(e) {
   //   console.log(e);
   //   let m = $(e.target).parent();
@@ -63,6 +61,11 @@ const Calling = (album) => {
     }); //end of AJAX call
 //#searchSubmit end of click
 });
+
+
+console.log(long);
+
+
 
 
 
